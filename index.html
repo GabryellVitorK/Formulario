@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+    <script type="text/javascript" src="js/script.js"></script>
+
+</head>
+<body>
+
+    <main id="container">
+        <form id="form">
+            <div id="header">
+                <h1>Formulário</h1>
+                    <i id="mode_icon" class="fa-regular fa-moon"></i>
+            </div>
+
+            <div id="inputs">
+                <div class="input_box">
+                    <label for="nome">
+                        Nome
+                        <div class="input_field">
+                            <i class="fa-regular fa-user"></i>
+                            <input type="text" id="nome" nome="nome">
+                        </div>
+                    </label>
+                </div>
+
+                <div id="inputs">
+                    <div class="input_box">
+                        <label for="emprego">
+                            Emprego
+                            <div class="input_field">
+                                <i class="fa-solid fa-briefcase"></i>
+                                <input type="text" id="emprego" emprego="emprego">
+                            </div>
+                        </label>
+                    </div>
+
+                    <div id="inputs">
+                        <div class="input_box">
+                            <label for="idade">
+                                Data de Nascimento
+                                <div class="input_field">
+                                    <i class="fa-solid fa-cake-candles"></i>
+                                    <input type="datetime-local" id="idade" idade="idade">
+                                </div>
+                            </label>
+                        </div>
+                </div>
+
+                <button type="submit" id="button">
+                    Enviar
+                </button>
+
+        </form>
+    </main>
+</body>
+</html>

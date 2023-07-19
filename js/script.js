@@ -1,19 +1,17 @@
-const mode = document.getElementById("mode_icon");
+const mode = document.getElementById('mode_icon');
 
-mode.addEventListener("click", () => {
-  const form = document.getElementById("form");
+mode.addEventListener('click', () => {
+  const form = document.getElementById('form');
 
-  if (mode.classList.contains("fa-regular fa-moon"));
-  {
-    mode.classList.remove("fa-regular fa-moon");
-    mode.classList.add("fa-regular fa-sun");
+  if (mode.classList.contains('fa-sun')) {
+    mode.classList.remove('fa-sun');
+    mode.classList.add('fa-moon');
 
-    form.classList.add("dark");
-    return;
+    form.classList.remove('dark');
+  } else {
+    mode.classList.remove('fa-moon');
+    mode.classList.add('fa-sun');
+
+    form.classList.add('dark');
   }
-
-  mode.classList.remove("fa-regular fa-sun");
-  mode.classList.add("fa-regular fa-moon");
-
-  form.classList.remove("dark");
 });
